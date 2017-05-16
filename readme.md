@@ -21,6 +21,7 @@
   * [前序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/PreOrder.java)
   * [中序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/InOrder.java)
   * [后序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/PostOrder.java)
+  * [最近公共祖先](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/LCA.java)
 
 ### leetcode 
 
