@@ -1,9 +1,8 @@
 package leetcode;
 
-import java.util.Objects;
 
 /**
- * Created by cshuo on 2017/3/16.
+ * Created by cshuo on 2017/3/16
  */
 public class ReverseWord {
     public String reverseWords(String s){

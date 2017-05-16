@@ -24,7 +24,7 @@
   * [最近公共祖先](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/LCA.java)
 
 ### leetcode 
-
+- [包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Permutation.java)
 
 ### 剑指offer
 - [复杂链表的复制](https://github.com/fengzhongliusu/algorithm/blob/master/sword/CopyLinkNodes.java)
