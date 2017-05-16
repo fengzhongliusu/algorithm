@@ -1,6 +1,29 @@
 # leetcode, 剑指offer，hihocoder题解
 
+### 基本算法
+- 排序
+  * [冒泡排序](https://github.com/fengzhongliusu/algorithm/blob/master/collections/sort/Bubble.java)
+  * [插入排序](https://github.com/fengzhongliusu/algorithm/blob/master/collections/sort/Insertion.java)
+  * [选择排序](https://github.com/fengzhongliusu/algorithm/blob/master/collections/sort/Selection.java)
+  * [快排](https://github.com/fengzhongliusu/algorithm/blob/master/collections/sort/Quick.java)
+  * [堆排](https://github.com/fengzhongliusu/algorithm/blob/master/collections/sort/Heap.java)
+  * [归并排序](https://github.com/fengzhongliusu/algorithm/blob/master/collections/sort/Merge.java)
+- 链表
+  * [检查环]()
+  * [检查相交](https://github.com/fengzhongliusu/algorithm/blob/master/collections/linkedList/CheckJoin.java)
+  * [单链表反转](https://github.com/fengzhongliusu/algorithm/blob/master/collections/linkedList/Reverse.java)
+- 字符串
+  * [KMP](https://github.com/fengzhongliusu/algorithm/blob/master/collections/string/KMP.java)
+  * [最长公共子串/序列](https://github.com/fengzhongliusu/algorithm/blob/master/collections/string/LCS.java)
+- 树
+  * [满二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/FullTree.java)
+  * [完全二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/CompleteTree.java)
+  * [前序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/PreOrder.java)
+  * [中序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/InOrder.java)
+  * [后序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/PostOrder.java)
+
 ### leetcode 
+
 
 ### 剑指offer
 - [复杂链表的复制](https://github.com/fengzhongliusu/algorithm/blob/master/sword/CopyLinkNodes.java)
