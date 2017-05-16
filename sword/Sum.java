@@ -8,7 +8,7 @@ package sword;
  */
 public class Sum {
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println(sum(3));
     }
     public static int sum(int n){
         return (int)Math.pow(n,2)+n >> 1;
