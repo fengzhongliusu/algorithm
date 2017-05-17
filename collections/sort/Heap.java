@@ -40,14 +40,5 @@ public class Heap extends Sort{
      * for ever-practicing.
      */
     public static void UpDown(int[] a, int start, int end){
-        int p = start;
-        int c = 2 * start + 1;
-        int tmp = a[p];
-        for(; c<=end; p=c, c=2*p+1){
-            if(c < end && a[c]<a[c+1]) c++;
-            if(tmp >= a[c]) break;
-            a[p] = a[c];
-        }
-        a[p] = tmp;
     }
 }
