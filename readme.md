@@ -23,6 +23,8 @@
   * [后序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/PostOrder.java)
   * [最近公共祖先](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/LCA.java)
   * [二叉查找树删除节点](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/DeleletNode.java)
+- 查找
+  * [二分搜索及扩展](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/BinSearch.java)
 
 ### leetcode 
 - [不包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Permutation.java)
