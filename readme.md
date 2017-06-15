@@ -27,9 +27,11 @@
   * [二分搜索及扩展](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/BinSearch.java)
 
 ### leetcode 
-- [不包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Permutation.java)
-- [包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/sword/Permutation.java)
-- [集合的子集问题](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Subset.java)
+- [回溯#不包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Permutation.java)
+- [回溯#包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/sword/Permutation.java)
+- [回溯#集合的子集问题](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Subset.java)
+- [回溯#八皇后问题](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Queens.java)
+
 
 ### 剑指offer
 - [复杂链表的复制](https://github.com/fengzhongliusu/algorithm/blob/master/sword/CopyLinkNodes.java)
