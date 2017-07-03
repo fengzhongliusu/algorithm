@@ -11,7 +11,8 @@ import java.util.*;
 public class Queens {
     static ArrayList<int[]> solutions;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Thread.sleep(1000);
         int k = 8;
         solutions = new ArrayList<>();
         int[] p = new int[k];

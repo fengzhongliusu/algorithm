@@ -5,7 +5,7 @@ import java.util.*;
  * author: cshuo
  * date: 2017/4/21
  * version: 1.0
- * description:
+ * description: 递归回溯, 找一个集合的所有子集.
  */
 public class Subset {
 
@@ -17,7 +17,6 @@ public class Subset {
 
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
-//        Arrays.sort(nums);
         backtrack(list, new ArrayList<Integer>(), nums, 0);
         return list;
     }
