@@ -1,4 +1,4 @@
-/*
+package leetcode;/*
 * Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
 
 Find all the elements that appear twice in this array.
@@ -13,8 +13,9 @@ Output:
 [2,3]
 */
 
+import java.util.*;
 
-public class Solution {
+public class LC442{
     /*
     将数字放回其自然顺序的位置，如4的index是3, 若该位置已经有对应的数字，则其是重复的数字，
     可能会对一个数字进行多次判断，用set保证唯一性。
@@ -42,6 +43,7 @@ public class Solution {
 
 
 /*********** Better ***************/
+/*
 public class Solution {
     // when find a number i, flip the number at position i-1 to negative.
     // if the number at position i-1 is already negative, i is the number that occurs twice.
@@ -57,3 +59,4 @@ public class Solution {
         return res;
     }
 }
+*/

@@ -1,4 +1,4 @@
-/*
+package leetcode;/*
 Suppose you have N integers from 1 to N. We define a beautiful arrangement as an array that is constructed by these N numbers successfully if one of the following is true for the ith position (1 ? i ? N) in this array:
 
 The number at the ith position is divisible by i.
@@ -9,8 +9,8 @@ Example 1:
 Input: 2
 Output: 2
 */
-
-public class Solution {
+import java.util.*;
+public class LC526{
     private int sum = 0;
 
     public int countArrangement(int N) {
@@ -39,7 +39,7 @@ public class Solution {
 
 
 /************** Better space complexity ***************/
-
+/**
 public class Solution {
     private int sum = 0;
 
@@ -48,9 +48,7 @@ public class Solution {
         return sum;
     }
 
-    /*
-    * 同样是回溯，不需要创建中间的list变量，但是每次都要遍历整个数组, 1 ... N.
-    */
+    //同样是回溯，不需要创建中间的list变量，但是每次都要遍历整个数组, 1 ... N.
     public void dfs(int N, int position, int[] used){
         // all number well placed.
         if(position > N) sum += 1;
@@ -63,3 +61,4 @@ public class Solution {
         }
     }
 }
+*/
