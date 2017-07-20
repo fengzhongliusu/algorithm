@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+class Main{
     public String PrintMinNumber(int [] numbers) {
         List<Integer> lists = new ArrayList<Integer>();
         for(int e: numbers) {

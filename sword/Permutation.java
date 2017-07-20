@@ -10,8 +10,9 @@ import java.util.*;
  */
 public class Permutation {
     public static void main(String[] args) {
-        int[] a = {1,2,2};
+        int[] a = {0,1,2,3};
         System.out.println(permuteUnique(a));
+        System.out.println(permuteUnique(a).size());
     }
 
     public static List<List<Integer>> permuteUnique(int[] nums) {

@@ -6,6 +6,25 @@ import java.util.ArrayList;
  * maximum subarray
  */
 public class MaxSubArr {
+
+    /**
+     * @param array
+     * sum保留潜在的最大子串的子序列, max记录最大和.
+     */
+    public int greatestSumOfSubArray(int[] array) {
+        int sum=0, max = Integer.MIN_VALUE;
+        for(int e: array){
+            if(sum <=0) sum = e;
+            else sum += e;
+            if(sum > max) max = sum;
+        }
+        return max;
+    }
+
+    /**
+     * @param nums
+     * 找到子数组的最大和, 并返回子数组.
+     */
     public static int maxSubArr(int[] nums){
         if(nums == null || nums.length < 1) return 0;
         int max = Integer.MIN_VALUE, sum = 0;
