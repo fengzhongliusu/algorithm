@@ -32,7 +32,7 @@ public class LC522{
         }
 
         String[] keys = map.keySet().toArray(new String[map.size()]);
-        Arrays.sort(keys, (o1, o2) -> o2.length() - o1.length());
+//        Arrays.sort(keys, (o1, o2) -> o2.length() - o1.length());
         int max_len = keys[0].length();
 
         for(int i=0; i<keys.length; i++) {

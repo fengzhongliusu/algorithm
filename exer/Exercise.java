@@ -1,5 +1,7 @@
 package exer;
 
+import com.sun.tools.corba.se.idl.StringGen;
+
 import java.util.*;
 
 /**
@@ -10,7 +12,5 @@ import java.util.*;
  */
 public class Exercise {
     public static void main(String[] args) {
-        int a = 'a';
-        System.out.println(a);
     }
 }
