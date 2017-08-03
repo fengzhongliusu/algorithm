@@ -56,7 +56,7 @@ public class Hiho326_1 {
         return sum;
     }
 
-    public static boolean isHiho(List str, int l, int r){
+    public static boolean isHiho(List<Character> str, int l, int r){
         int[] sign = new int[]{2, 1, 1};
         for(int i =l; i<=r; i++){
             if(str.get(i) == 'h') sign[0]--;

@@ -24,6 +24,7 @@ public class Merge extends Sort {
     private static void merge(int[] a, int low, int mid, int hi){
         int k = mid + 1;
         int l = low;
+
         for(int i = low; i<=hi; i++){
             temp[i] = a[i];
         }
