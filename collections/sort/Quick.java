@@ -17,18 +17,14 @@ public class Quick extends Sort {
     }
 
     /**
-     * @param a
-     * @param k
-     * @param low
-     * @param hi
      * @return use quick sort find the Kth number in array.
      */
-    private static int findK(int[] a, int k, int low, int hi){
-        if(k > hi - low + 1) return -1;
-        int p = partition2(a, low, hi);
-        if(p - low  == k-1) return a[p];
-        else if(p-low < k -1) return findK(a, k-p+low-1, p+1, hi);
-        else return findK(a, k, low, p-1);
+    public static int findKth(int[] nums, int l, int r, int k) {
+        if(l > r) return -1;
+        int p = partition(nums, l, r);
+        if(p == k) return nums[p];
+        else if(p > k) return findKth(nums, l, p-1, k);
+        else return findKth(nums, p+1, r, k);
     }
 
     private static int partition(int[] a, int low, int hi){
@@ -88,6 +84,6 @@ public class Quick extends Sort {
         Quick.sort(a);
         Quick.printList(a);
         // -1, 0, 1, 1, 1, 2, 3, 4, 6, 8, 9, 10
-        System.out.println(findK(a, 12, 0, a.length-1));
+        System.out.println(findKth(a, 12, 0, a.length-1));
     }
 }
