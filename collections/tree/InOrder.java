@@ -31,6 +31,7 @@ public class InOrder {
         ArrayList<Integer> l = new ArrayList<>();
 //        inTrav(l, t1);
         inTrav2(l, t1);
+//        exer(l, t1);
         System.out.println(l);
     }
 
@@ -60,6 +61,22 @@ public class InOrder {
                 p = st.pop();
                 l.add(p.val);
                 // 取右孩子, 进行下一轮的一路向左
+                p = p.right;
+            }
+        }
+    }
+
+    public static void exer(ArrayList<Integer> l, TreeNode root) {
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode p = root;
+        while(p!=null || !st.isEmpty()) {
+            while(p!=null) {
+                st.push(p);
+                p = p.left;
+            }
+            if(!st.isEmpty()) {
+                p = st.pop();
+                l.add(p.val);
                 p = p.right;
             }
         }

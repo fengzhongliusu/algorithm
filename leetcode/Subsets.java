@@ -16,19 +16,18 @@ public class Subsets {
         l.add(1);
         l.add(2);
         l.add(2);
-//        l.remove(2);
         l.remove(new Integer(2));
         System.out.println(l);
     }
 
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> rs = new ArrayList<>();
-        addSubset(rs, new ArrayList<Integer>(), nums, 0);
+        addSubset(rs, new ArrayList<>(), nums, 0);
         return rs;
     }
 
     public static void addSubset(List<List<Integer>> result, List<Integer> set, int[] nums, int start){
-        result.add(new ArrayList<Integer>(set));
+        result.add(new ArrayList<>(set));
         for(int i=start; i<nums.length; i++){
             set.add(nums[i]);
             addSubset(result, set, nums, i+1);

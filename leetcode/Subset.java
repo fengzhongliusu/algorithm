@@ -17,7 +17,7 @@ public class Subset {
 
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
-        backtrack(list, new ArrayList<Integer>(), nums, 0);
+        backtrack(list, new ArrayList<>(), nums, 0);
         return list;
     }
 
