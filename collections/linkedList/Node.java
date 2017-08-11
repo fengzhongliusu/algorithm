@@ -13,3 +13,11 @@ public class Node {
         this.val = val;
     }
 }
+
+class ListNode {
+    public int val;
+    public ListNode next;
+    public ListNode(int val){
+        this.val = val;
+    }
+}
