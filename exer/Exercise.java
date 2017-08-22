@@ -1,7 +1,5 @@
 package exer;
 
-import com.sun.tools.corba.se.idl.StringGen;
-
 import java.util.*;
 
 /**
@@ -12,10 +10,9 @@ import java.util.*;
  */
 public class Exercise {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        while(in.hasNext()) {
-            System.out.println(in.next());
-        }
-        in.close();
+        List<int[]> a = new ArrayList<>();
+        a.add(new int[]{1,2});
+        int[] e = a.get(0);
+        System.out.println(e[0] + " " + e[1]);
     }
 }
