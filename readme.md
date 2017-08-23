@@ -18,6 +18,7 @@
 - 字符串
   * [KMP](https://github.com/fengzhongliusu/algorithm/blob/master/collections/string/KMP.java)
   * [最长公共子串/序列](https://github.com/fengzhongliusu/algorithm/blob/master/collections/string/LCS.java)
+  * [最短编辑距离](https://github.com/fengzhongliusu/algorithm/blob/master/collections/string/EditDis.java)
 - 树
   * [满二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/FullTree.java)
   * [完全二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/CompleteTree.java)
