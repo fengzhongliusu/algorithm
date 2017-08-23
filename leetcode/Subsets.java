@@ -22,7 +22,7 @@ public class Subsets {
 
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> rs = new ArrayList<>();
-        addSubset(rs, new ArrayList<>(), nums, 0);
+        addSubset(rs, new ArrayList<Integer>(), nums, 0);
         return rs;
     }
 
