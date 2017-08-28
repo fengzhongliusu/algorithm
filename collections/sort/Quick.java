@@ -1,5 +1,7 @@
 package collections.sort;
 
+import java.util.Stack;
+
 /**
  * Created by cshuo on 2017/2/13.
  * Time NlgN
@@ -17,30 +19,29 @@ public class Quick extends Sort {
     }
 
     /**
+     * 非递归写法. 典型的尾递归转迭代写法，每次跌打一个分支的话，可以直接用一个局部变量进行更新；多个分支的话用栈或队列皆可.
+     */
+    public static void sort2(int[] a, int low, int hi) {
+        int p, init = 0;
+        Stack<Integer> st = new Stack<>();
+        while(init == 0 || !st.isEmpty()) {
+            if(init != 0) { hi=st.pop(); low=st.pop(); }
+            init = 1;
+            p = partition2(a, low, hi);
+            if(low < p-1) { st.push(low); st.push(p-1); }
+            if(hi > p+1) { st.push(p+1); st.push(hi); }
+        }
+    }
+
+    /**
      * @return use quick sort find the Kth number in array.
      */
     public static int findKth(int[] nums, int l, int r, int k) {
         if(l > r) return -1;
-        int p = partition(nums, l, r);
+        int p = partition2(nums, l, r);
         if(p == k) return nums[p];
         else if(p > k) return findKth(nums, l, p-1, k);
         else return findKth(nums, p+1, r, k);
-    }
-
-    private static int partition(int[] a, int low, int hi){
-        int i = low, j = hi+1;
-        while (true){
-            while(a[++i] <= a[low]){
-               if(i==hi) break;
-            }
-            while(a[--j] >= a[low]){
-                if(j==low) break;
-            }
-            if(i >= j) break;
-            swap(a, i, j);
-        }
-        swap(a, low, j);
-        return j;
     }
 
     public static int partition3(int[] arr, int low, int high){
@@ -81,7 +82,7 @@ public class Quick extends Sort {
 
     public static void main(String[] args){
         int []a = {1,1,0,-1,2,3,1,10,9,4,8,6};
-        Quick.sort(a);
+        Quick.sort2(a, 0, a.length-1);
         Quick.printList(a);
         // -1, 0, 1, 1, 1, 2, 3, 4, 6, 8, 9, 10
         System.out.println(findKth(a, 12, 0, a.length-1));

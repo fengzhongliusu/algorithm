@@ -12,15 +12,20 @@
   * [检查环](https://github.com/fengzhongliusu/algorithm/blob/master/collections/linkedList/CheckRing.java)
   * [检查相交](https://github.com/fengzhongliusu/algorithm/blob/master/collections/linkedList/CheckJoin.java)
   * [单链表反转](https://github.com/fengzhongliusu/algorithm/blob/master/collections/linkedList/Reverse.java)
+  * [单链表快排](https://github.com/fengzhongliusu/algorithm/blob/master/collections/linkedList/QuickSort.java)
+  * [单链表归并排序](https://github.com/fengzhongliusu/algorithm/blob/master/collections/linkedList/MergeSort.java)
+  * [k个单链表归并](https://github.com/fengzhongliusu/algorithm/blob/master/collections/linkedList/Kmerge.java)
 - 字符串
   * [KMP](https://github.com/fengzhongliusu/algorithm/blob/master/collections/string/KMP.java)
   * [最长公共子串/序列](https://github.com/fengzhongliusu/algorithm/blob/master/collections/string/LCS.java)
+  * [最短编辑距离](https://github.com/fengzhongliusu/algorithm/blob/master/collections/string/EditDis.java)
 - 树
   * [满二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/FullTree.java)
   * [完全二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/CompleteTree.java)
   * [前序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/PreOrder.java)
   * [中序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/InOrder.java)
   * [后序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/PostOrder.java)
+  * [后序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/TreeLevelTraverse.java)
   * [最近公共祖先](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/LCA.java)
   * [二叉查找树删除节点](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/DeleletNode.java)
 - 查找
@@ -28,6 +33,12 @@
   * [单调栈查找](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/MonoStack.java)
 
 ### leetcode 
+
+#### 排序
+- [拓扑排序-课程学习](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC207.java)
+
+#### 搜索
+- [两个有序数组找中位数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC4.java)
 
 #### 回溯
 - [不包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Permutation.java)
@@ -40,6 +51,11 @@
 - [爬梯子](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC70.java)
 - [抢劫利益最大化](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC198.java)
 - [前缀和应用](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC303.java)
+- [最长回文串](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC5.java)
+- [统计回文串数目](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC647.java)
+- [换硬币](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC322.java)
+- [最长上升子序列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC300.java)
+
 
 #### 二叉树
 

@@ -1,14 +1,12 @@
-package algs;
+package collections.search;
 
 /**
  * Created by cshuo on 2017/6/4.
  */
 public class BinSearch {
     public static void main(String[] args) {
-        int []arrs = {1,2,3,4,4,6,9,10};
-        System.out.println(findK(arrs, 3));
-        System.out.println(findFirstK(arrs, 4));
-        System.out.println(findLastK(arrs, 4));
+        int []arrs = {1,2,3,10};
+        System.out.println(firstGreaterOrEqual(arrs, -1));
     }
 
     /**
@@ -72,6 +70,43 @@ public class BinSearch {
                 l = mid + 1;
             else
                 return mid;
+        }
+        return -1;
+    }
+
+    /**
+     * 递增数组中，第一个大于或等于target的元素的下表，若都小于target, 则返回数组的长度 nums.length;
+     */
+    public static int firstGreaterOrEqual(int[] nums, int target) {
+        int l=0, r=nums.length, mid;
+        while(l < r) {
+            mid = (r-l)/2 + l;
+            //nums[mid] == target时，结果可能是Mid, nums[mid] > target时，也有可能是mid.
+            if(target <= nums[mid]) r = mid;
+            else l = mid + 1;
+        }
+        return r;
+    }
+
+    /**
+     * 先递增后递减数组找峰值
+     */
+    public static int maxPoint(int[] A) {
+        int m = A.length;
+        int begin = 0;
+        int end = m - 1;
+        int tp = begin + (end - begin) / 2;
+
+        // the condition "tp > 0 && tp < m -1" makes sure that tp is not at the beginning or the end
+        while (tp > 0 && tp < m - 1) {
+            if (A[tp] > A[tp + 1] && A[tp] > A[tp - 1]) {
+                return tp;
+            } else if (A[tp] < A[tp + 1]) {
+                begin = tp + 1;
+            } else {
+                end = tp - 1;
+            }
+            tp = begin + (end - begin) / 2;
         }
         return -1;
     }

@@ -24,22 +24,21 @@ public class findSumPath {
         System.out.println(findPath(t1, 22));
     }
 
-    public static ArrayList<ArrayList<Integer>> findPath(TreeNode root, int target){
+    public static ArrayList<ArrayList<Integer>> findPath(TreeNode root,int target) {
         ArrayList<ArrayList<Integer>> rs = new ArrayList<>();
-        addPath(root, rs, new ArrayList<Integer>(), 0, target, 1);
+        if(root == null) return rs;
+        addPath(root, rs, new ArrayList<Integer>(), 0, target);
         return rs;
     }
-
-    public static void addPath(TreeNode node, ArrayList<ArrayList<Integer>> rs, ArrayList<Integer> list, int sum, int target, int l){
-        if(node == null){
-            // l == 1是为了避免叶子节点的左右子节点都执行该语句,导致结果重复.
-            if(sum == target && l==1) rs.add(new ArrayList<>(list));
+    public static void addPath(TreeNode node, ArrayList<ArrayList<Integer>> rs, ArrayList<Integer> list, int sum, int target){
+        list.add(node.val);
+        if(node.left == null && node.right == null && sum +node.val == target) {
+            rs.add(new ArrayList(list));
+            list.remove(list.size()-1);
             return;
         }
-        // 回溯过程.
-        list.add(node.val);
-        addPath(node.left, rs, list, sum+node.val, target, 1);
-        addPath(node.right, rs, list, sum+node.val, target, 0);
+        if(node.left != null) addPath(node.left, rs, list, sum+node.val, target);
+        if(node.right != null) addPath(node.right, rs, list, sum+node.val, target);
         list.remove(list.size()-1);
     }
 }

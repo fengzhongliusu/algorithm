@@ -1,5 +1,9 @@
 package collections.sort;
 
+import java.util.Comparator;
+import java.util.List;
+import java.util.PriorityQueue;
+
 /**
  * Created by cshuo on 2017/2/13.
  *
@@ -40,5 +44,8 @@ public class Merge extends Sort {
         int []a = {1,3,4,2,7,5,2,2,0};
         Merge.sort(a);
         Merge.printList(a);
+
+
     }
 }
+
