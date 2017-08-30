@@ -52,6 +52,7 @@ public class LC84 {
                 h = heights[st.pop()];
                 int l = (st.isEmpty() ? -1:st.peek());
                 maxRec = Math.max(h*(i-l-1), maxRec);
+                System.out.println(h+": " + h*(i-l-1));
             }
             st.push(i);
         }
@@ -84,10 +85,11 @@ public class LC84 {
 
 
     public static void main(String[] args) {
-        int[] hs = new int[] {2,1,5,6,2,3};
-        int[][] rs = monoStack(hs);
-        for(int e: rs[0]) System.out.print(e+ " ");
-        System.out.println();
-        for(int e: rs[1]) System.out.print(e+ " ");
+        int[] hs = new int[] {2,1,5,5,6,2,3};
+        System.out.println(largestRec(hs));
+//        int[][] rs = monoStack(hs);
+//        for(int e: rs[0]) System.out.print(e+ " ");
+//        System.out.println();
+//        for(int e: rs[1]) System.out.print(e+ " ");
     }
 }
