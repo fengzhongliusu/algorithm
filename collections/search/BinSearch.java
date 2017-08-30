@@ -6,7 +6,8 @@ package collections.search;
 public class BinSearch {
     public static void main(String[] args) {
         int []arrs = {1,2,3,10};
-        System.out.println(firstGreaterOrEqual(arrs, -1));
+        System.out.println(maxPoint(arrs));
+//        System.out.println(firstGreaterOrEqual(arrs, -1));
     }
 
     /**
