@@ -1,6 +1,8 @@
 package exer;
 
 
+import java.util.*;
+
 /**
  * author: cshuo
  * date: 2017/6/15
@@ -10,8 +12,10 @@ package exer;
 
 public class Exercise {
     public static void main(String[] args) {
-        int i = 0;
-        while(i++ < 5) System.out.println(i);
-        System.out.println("asdf".substring(1));
+        Integer[] l = new Integer[] {1,2};
+        List<Integer> s =  new ArrayList<>(Arrays.asList(l));
+        System.out.println(s.get(0));
+        l[0] = 5;
+        System.out.println(s.get(0));
     }
 }

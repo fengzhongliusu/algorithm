@@ -15,8 +15,6 @@ public class LC43 {
         String num1 = "123";
         String num2 = "38383838";
         System.out.println(multiply(num1, num2));
-        int[] arr = new int[] {1,2,3};
-        int[] sub = Arrays.copyOfRange(arr, 0, 2);
     }
 
     public static String multiply(String num1, String num2) {
@@ -30,7 +28,7 @@ public class LC43 {
                 mlt = (num1.charAt(i)-'0') *(num2.charAt(j)-'0');
                 p1 = i + j;
                 p2 = i + j + 1;
-                rs[p1] += (mlt+rs[p2]) / 10;
+                rs[p1] += (mlt+rs[p2]) / 10;    // 操作之后rs[p1]是可能大于9的，但是会被之后迭代的下一行求余操作变成小于10.
                 rs[p2] = (mlt+rs[p2]) % 10;
             }
         StringBuilder sb = new StringBuilder();

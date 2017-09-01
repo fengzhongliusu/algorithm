@@ -11,6 +11,11 @@ import java.util.Map;
  */
 public class LC73 {
 
+    /**
+     * Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
+     *
+     * 设置一个行标记数组以及一个列标记数组.
+     */
     public void setZeroes(int[][] matrix) {
         if(matrix.length < 1) return;
 

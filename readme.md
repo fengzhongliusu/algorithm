@@ -39,10 +39,13 @@
 
 #### 搜索
 - [两个有序数组找中位数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC4.java)
+- [BFS-字符串最短编辑路径](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC127.java)
 
 #### 回溯
 - [不包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Permutation.java)
 - [包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/sword/Permutation.java)
+- [Leetcode 包含重复元素的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC47.java)
+- [Next Permutation](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC31.java)
 - [集合的子集问题](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Subset.java)
 - [八皇后问题](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Queens.java)
 
@@ -62,6 +65,7 @@
 #### 链表
 
 #### 字符串
+- [最长上升子序列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC300.java)
 
 #### 位操作
 
