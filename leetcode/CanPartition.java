@@ -1,7 +1,7 @@
 package leetcode;
 
 /**
- * Created by cshuo on 2017/3/3.
+ * Created by cshuo on 2017/3/3
  */
 public class CanPartition {
     public static boolean canPartition(int[] nums) {
@@ -19,12 +19,6 @@ public class CanPartition {
                 dp[j] = dp[j] || dp[j-nums[i]];
             }
         }
-
         return dp[sum>>1];
-    }
-
-    public static void main(String[] args){
-        int[] a = {1,5,11,5};
-        System.out.println(CanPartition.canPartition(a));
     }
 }

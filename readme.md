@@ -64,6 +64,7 @@
 
 
 #### 二叉树
+- [最大路径值](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC124.java)
 
 #### 链表
 
