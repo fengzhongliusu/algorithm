@@ -58,6 +58,9 @@
 - [统计回文串数目](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC647.java)
 - [换硬币](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC322.java)
 - [最长上升子序列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC300.java)
+- [正则匹配](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC10.java)
+- [通配符匹配](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC44.java)
+- [Perfecr Squares](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC279.java)
 
 
 #### 二叉树

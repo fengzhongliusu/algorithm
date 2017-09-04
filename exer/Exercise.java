@@ -12,10 +12,7 @@ import java.util.*;
 
 public class Exercise {
     public static void main(String[] args) {
-        Integer[] l = new Integer[] {1,2};
-        List<Integer> s =  new ArrayList<>(Arrays.asList(l));
-        System.out.println(s.get(0));
-        l[0] = 5;
-        System.out.println(s.get(0));
+        int a = (int) Math.sqrt(13);
+        System.out.println(a);
     }
 }
