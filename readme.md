@@ -64,6 +64,9 @@
 - [Distinct Subsequences](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC115.java)
 - [k逆序对的排列数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC629.java)
 - [蛙跳能否到终点](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC403.java)
+- [最长的pair chain](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC646.java)
+- [不同的路径数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC62.java)
+- [带障碍的不同路径数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC62.java)
 
 
 #### 二叉树

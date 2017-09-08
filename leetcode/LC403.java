@@ -8,7 +8,7 @@ public class LC403 {
     }
 
     /**
-     * 思路: 使用List[]数组记录从其他位置可以调到该位置可以选择的步数; dp[]数组记录是否能调到当前位置. 复杂度 > O(n^2);
+     * 思路: 使用List[]数组记录从其他位置可以调到该位置可以选择的步数; dp[]数组记录是否能调到当前位置. 复杂度 大于 O(n^2);
      */
     public static boolean canCross(int[] stones) {
         if(stones.length < 2) return true;
@@ -25,6 +25,8 @@ public class LC403 {
                     if(stones[i] - stones[j]<=e+1 && stones[i]-stones[j]>=e-1) {
                         dp[i] = true;
                         steps[i].add(stones[i]-stones[j]);
+                        steps[i].add(stones[i]-stones[j] + 1);
+                        if(stones[i]-stones[j] > 1) steps[i].add(stones[i]-stones[j] + 1);
                     }
             }
         }
@@ -34,6 +36,7 @@ public class LC403 {
     /**
      * 使用map存储数据，key是stone位置，val是set,包含从该位置可以跳的步数，
      * 从0开始取出key, 若能到达dest返回true; 否则更新能到达的位置的可选步数.
+     * 复杂度: O(n^2);
      */
     public static boolean canCross1(int[] stones) {
         if(stones.length < 2) return true;
@@ -41,7 +44,7 @@ public class LC403 {
         map.put(0, new HashSet<>());
         map.get(0).add(1);
         for (int i = 1; i < stones.length-1; i++) {
-            map.put(stones[i], new HashSet<Integer>() );
+            map.put(stones[i], new HashSet<>() );
         }
         for(int i=0; i<stones.length-1; i++) {
             for(int e: map.get(stones[i])) {

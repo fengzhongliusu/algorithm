@@ -12,7 +12,5 @@ import java.util.*;
 
 public class Exercise {
     public static void main(String[] args) {
-        int a = (int) Math.sqrt(13);
-        System.out.println(a);
     }
 }
