@@ -10,9 +10,31 @@ import java.util.*;
  * description:
  */
 
+class ClassA {
+    static {
+        System.out.println("A: static print");
+    }
+    {
+        System.out.println("A: print");
+    }
+    public ClassA() {
+        System.out.println("A: construct");
+    }
+}
+
+class ClassB extends ClassA {
+    static {
+        System.out.println("B: static print");
+    }
+    {
+        System.out.println("B: print");
+    }
+    public ClassB() {
+        System.out.println("B: construct");
+    }
+}
 public class Exercise {
     public static void main(String[] args) {
-        int a = (int) Math.sqrt(13);
-        System.out.println(a);
+        new ClassB();
     }
 }
