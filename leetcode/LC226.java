@@ -1,14 +1,11 @@
 package leetcode;
-
-import apple.laf.JRSUIUtils;
-
 import java.util.Stack;
 
 /**
  * author: cshuo
  * date: 2017/4/17
  * version: 1.0
- * description:
+ * description: Invert Binary Tree.
  */
 public class LC226 {
     public TreeNode invertTree(TreeNode root) {
