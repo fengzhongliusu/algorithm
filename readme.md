@@ -28,6 +28,7 @@
   * [后序遍历(递归/非递归)](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/TreeLevelTraverse.java)
   * [最近公共祖先](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/LCA.java)
   * [二叉查找树删除节点](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/DeleletNode.java)
+  * [根据前序和中序构建二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC105.java)
 - 查找
   * [二分搜索及扩展](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/BinSearch.java)
   * [单调栈查找](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/MonoStack.java)
