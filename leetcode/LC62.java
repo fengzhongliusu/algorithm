@@ -13,7 +13,11 @@ public class LC62 {
      * 思路: DP, dp[i][j]到达i行j列的可能路径数,
      * 传递公式: dp[i][j] = dp[i-1][j] + dp[i][j-1]; (增加一个0行, 0列减少边界判断.)
      */
-    public int uniquePaths(int m, int n) {
+    public static void main(String[] args) {
+        System.out.println(uniquePaths(0,0));
+    }
+
+    public static int uniquePaths(int m, int n) {
         if(m == 0 || n == 0) return 0;
         int[][] dp = new int[m+1][n+1];
         dp[1][1] = 1;

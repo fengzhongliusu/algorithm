@@ -68,7 +68,7 @@
 - [蛙跳能否到终点](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC403.java)
 - [最长的pair chain](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC646.java)
 - [不同的路径数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC62.java)
-- [带障碍的不同路径数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC62.java)
+- [带障碍的不同路径数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC63.java)
 
 
 #### 二叉树
@@ -80,7 +80,9 @@
 - [最长上升子序列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC300.java)
 - [大整数相乘](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC43.java)
 
-#### 位操作
+#### 数学
+- [正数反转](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC7.java)
+- [大整数相乘](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC43.java)
 
 ### 剑指offer
 - [复杂链表的复制](https://github.com/fengzhongliusu/algorithm/blob/master/sword/CopyLinkNodes.java)
@@ -106,5 +108,3 @@
 - [镜像翻转二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/sword/TreeMirror.java)
 - [栈实现队列](https://github.com/fengzhongliusu/algorithm/blob/master/sword/TwoStackQueue.java)
 - [二叉树后序遍历判断](https://github.com/fengzhongliusu/algorithm/blob/master/sword/findSumPath.java)
-
-### hihocoder 
