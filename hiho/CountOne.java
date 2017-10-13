@@ -16,6 +16,6 @@ public class CountOne {
 
     public static void main(String[] args) {
         int a = -1;
-        System.out.println(CountOne.count_bin_one(a));
+        System.out.println(count_bin_one(a));
     }
 }

@@ -7,7 +7,7 @@ public class BinSearch {
     public static void main(String[] args) {
         int []arrs = {1,2,3,10};
         System.out.println(maxPoint(arrs));
-//        System.out.println(firstGreaterOrEqual(arrs, -1));
+        System.out.println(firstGreaterOrEqual(arrs, 1));
     }
 
     /**
@@ -82,7 +82,6 @@ public class BinSearch {
         int l=0, r=nums.length, mid;
         while(l < r) {
             mid = (r-l)/2 + l;
-            //nums[mid] == target时，结果可能是Mid, nums[mid] > target时，也有可能是mid.
             if(target <= nums[mid]) r = mid;
             else l = mid + 1;
         }

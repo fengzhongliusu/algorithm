@@ -12,7 +12,7 @@ public class LC142 {
      * 快慢指针法, 指针相遇, 令一个指针重新指向头结点，两个指针同时移动，步长为1，最后两个指针定相遇于环入口.
      * A+B+kN = 2A+2B
      * kN=A+B, (A = kN - B),
-     * A: 头结点到环的入口距离，B + kN 慢指针在环里走的距离.
+     * A: 头结点到环的入口距离，B: 相遇节点与入口的距离；
      */
     public ListNode detectCycle(ListNode head) {
         if(head == null || head.next == null) return null;
