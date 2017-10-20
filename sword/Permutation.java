@@ -37,7 +37,10 @@ public class Permutation {
         }
     }
 
-    /**基于next permutation思想, 递归解法*/
+    /**
+     * 基于next permutation思想, 递归解法
+     * Next Permutation是指: 如1,2,3,4,5的next permutation 是1,2,3,5,4。
+     **/
     public static List<List<Integer>> permuteDup(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         Integer[] eles = new Integer[nums.length];
@@ -48,11 +51,18 @@ public class Permutation {
         return ans;
     }
 
+    /**
+     */
     private static void permutate(List<List<Integer>> ans, Integer[] nums, int start) {
         if (start == nums.length) {
             ans.add(Arrays.asList(nums));
             return;
         }
+        /**
+         * 该递归是dfs，每次递归第一个i都不满足continue的条件，知道start回溯倒数第二个，
+         * 会swap最后一个元素与倒数第二个元素，例如1.2.3.4,5 -> 1,2,3,5,4. 产生一个排列。
+         * 其后依次产生后续排列。
+         */
         for (int i = start; i < nums.length; i++) {
             if (i != start && nums[start] == nums[i]) continue;
             swap(nums, start, i);    // 对sibling是有影响的.

@@ -36,6 +36,7 @@ public class MedianOfKlist {
     }
 
     public static void main(String[] args) {
+        Queue<Integer> q = new LinkedList<>();
         List<List<Integer>> lists = new ArrayList<>();
         lists.add(Arrays.asList(1,4));
         lists.add(Arrays.asList(2,5,8,11));
