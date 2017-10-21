@@ -80,7 +80,6 @@
 #### 链表
 
 #### 字符串
-- [最长上升子序列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC300.java)
 - [大整数相乘](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC43.java)
 
 #### 数学
@@ -92,7 +91,7 @@
 - [删除有序链表里的重复节点](https://github.com/fengzhongliusu/algorithm/blob/master/sword/DeleteDup.java)
 - [链表里倒数第K个节点](https://github.com/fengzhongliusu/algorithm/blob/master/sword/FindKthEnd.java)
 - [有序矩阵找数字](https://github.com/fengzhongliusu/algorithm/blob/master/sword/FindNumINMatrix.java)
-- [从根节点到叶节点路径和为指定数字的所有路径](https://github.com/fengzhongliusu/algorithm/blob/master/sword/VeriPostSeq.java)
+- [从根节点到叶节点路径和为指定数字的所有路径](https://github.com/fengzhongliusu/algorithm/blob/master/sword/findSumPath.java)
 - [判断一个序列是否为指定栈压入序列对应的弹出序列](https://github.com/fengzhongliusu/algorithm/blob/master/sword/IsPopOrder.java)
 - [数组的最大连续子数组和](https://github.com/fengzhongliusu/algorithm/blob/master/sword/MaxSubArr.java)
 - [合并两个有序链表](https://github.com/fengzhongliusu/algorithm/blob/master/sword/MergeLinkList.java)
@@ -110,5 +109,5 @@
 - [二叉树对称](https://github.com/fengzhongliusu/algorithm/blob/master/sword/SymTree.java)
 - [镜像翻转二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/sword/TreeMirror.java)
 - [栈实现队列](https://github.com/fengzhongliusu/algorithm/blob/master/sword/TwoStackQueue.java)
-- [二叉树后序遍历判断](https://github.com/fengzhongliusu/algorithm/blob/master/sword/findSumPath.java)
+- [二叉树后序遍历判断](https://github.com/fengzhongliusu/algorithm/blob/master/sword/VeriPostSeq.java)
 - [逆序对](https://github.com/fengzhongliusu/algorithm/blob/master/sword/ReversePair.java)

@@ -4,7 +4,9 @@ package sword;
  * author: cshuo
  * date: 2017/5/6
  * version: 1.0
- * description:
+ * description: 判断一个序列是否是BST的后续遍历序列；
+ * 思路: 对于后续遍历序列满足：除去最后一个元素x, 序列可以分为两个部分，第一段小于x, 第二段大于x,
+ * 且每一段递归定义都是一个后续序列。
  */
 public class VeriPostSeq {
     public static void main(String[] args) {
