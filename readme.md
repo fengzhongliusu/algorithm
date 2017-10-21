@@ -29,6 +29,8 @@
   * [最近公共祖先](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/LCA.java)
   * [二叉查找树删除节点](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/DeleletNode.java)
   * [根据前序和中序构建二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC105.java)
+  * [二叉搜索树转成双向链表](https://github.com/fengzhongliusu/algorithm/blob/master/sword/BST2LinkedList.java)
+ * 
 - 查找
   * [二分搜索及扩展](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/BinSearch.java)
   * [单调栈查找](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/MonoStack.java)
@@ -69,6 +71,7 @@
 - [最长的pair chain](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC646.java)
 - [不同的路径数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC62.java)
 - [带障碍的不同路径数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC63.java)
+- [Min Cost Path](https://github.com/fengzhongliusu/algorithm/blob/master/collections/dp/MCP.java)
 
 
 #### 二叉树
@@ -108,3 +111,4 @@
 - [镜像翻转二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/sword/TreeMirror.java)
 - [栈实现队列](https://github.com/fengzhongliusu/algorithm/blob/master/sword/TwoStackQueue.java)
 - [二叉树后序遍历判断](https://github.com/fengzhongliusu/algorithm/blob/master/sword/findSumPath.java)
+- [逆序对](https://github.com/fengzhongliusu/algorithm/blob/master/sword/ReversePair.java)

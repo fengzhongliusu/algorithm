@@ -52,6 +52,13 @@ public class Kmerge {
         return head.next;
     }
 
+    /**
+     * for practicing.
+     */
+    public ListNode exercise(ListNode l1, ListNode l2) {
+        return null;
+    }
+
     /**方法二：基于优先级队列, 初始时将各个链表的头结点放入优先级队列，每次更新时把其后元素压入队列.*/
     public ListNode mergeKlists(ListNode[] lists) {
         if(lists == null || lists.length < 1) return null;

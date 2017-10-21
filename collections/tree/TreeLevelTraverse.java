@@ -104,6 +104,7 @@ public class TreeLevelTraverse {
         ArrayList<List<Integer>> result = new ArrayList<>();
         if(root == null) return result;
         Queue<TreeNode> q = new ArrayDeque<>();
+
         TreeNode qt;
 
         q.offer(root);

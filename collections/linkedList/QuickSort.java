@@ -41,4 +41,26 @@ public class QuickSort {
         h.val = tmp;
         return p;
     }
+
+    /**
+     * for practicing
+     */
+    public ListNode practice(ListNode h, ListNode t) {
+        if(h == t) return h;
+        ListNode p = h, q = h;
+        int pivot = h.val;
+        while(q != t) {
+            if(q.val < pivot) {
+                p = p.next;
+                int tmp = p.val;
+                p.val = q.val;
+                q.val = tmp;
+            }
+            q = q.next;
+        }
+        int tmp = p.val;
+        p.val = pivot;
+        h.val = tmp;
+        return p;
+    }
 }

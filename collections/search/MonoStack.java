@@ -8,8 +8,10 @@ import java.util.Stack;
  */
 public class MonoStack {
     public static void main(String[] args) {
-        int[] nums = new int[] {99};
+        int[] nums = new int[] {1, 99, 100, 99};
         int[] rs = monoStack(nums);
+        for(int e: rs) System.out.print(e + " ");
+        System.out.println();
         int[][] rss = mStack(nums);
         for(int e : rss[0]) System.out.print(e + " ");
         System.out.println();
@@ -30,9 +32,26 @@ public class MonoStack {
     }
 
     /**
+     * for practicing.
+     */
+    public static int[] practice(int[] nums) {
+        int[] rs = new int[nums.length];
+        Stack<Integer> st = new Stack<>();
+        for(int i=0; i<nums.length; i++) {
+            while(!st.isEmpty() && st.peek() < nums[i]) {
+                rs[st.pop()] = i;
+            }
+            st.push(i);
+        }
+        while(!st.isEmpty()) rs[st.pop()] = -1;
+        return rs;
+    }
+
+    /**
      * 简化版：向右一次扫面即可找到每个元素左右两侧第一个比它小(大)的元素位置；
      * 单调递增栈, 向右扫描，当前元素比栈顶大，则直接入栈；当前元素比栈顶小，则右侧第一个比栈顶元素小的位置得知，栈顶元素出栈，
-     * 此时的栈顶元素即弹出元素右侧第一个比它小的位置。
+     * 此时的栈顶元素即弹出元素右侧第一个比它小的位置(因为：可以假设弹出前，栈顶两个元素分别是i, j，这里我们表述的是i 是 j左侧
+     * 第一个小于等于它的元素，因为如果存在i, j之间的一个元素k，使得nums[k] < nums[j], 那么i就不会在栈中存在了)。
      * 复杂度: O(n)
      */
     public static int[][] mStack(int[] nums) {

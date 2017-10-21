@@ -69,8 +69,8 @@ public class InOrder {
     public static void exer(ArrayList<Integer> l, TreeNode root) {
         Stack<TreeNode> st = new Stack<>();
         TreeNode p = root;
-        while(p!=null || !st.isEmpty()) {
-            while(p!=null) {
+        while(p != null || !st.isEmpty()) {
+            while(p != null) {
                 st.push(p);
                 p = p.left;
             }

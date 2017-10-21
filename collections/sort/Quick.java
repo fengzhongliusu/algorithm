@@ -77,7 +77,15 @@ public class Quick extends Sort {
     }
 
     private static int exer(int[] a, int low, int hi){
-        return 0;
+        int tmp = a[low];
+        while(low < hi) {
+            while(low < hi && a[hi] >= tmp) hi--;
+            a[low] = a[hi];
+            while(low < hi && a[low] <= tmp) low++;
+            a[hi] = a[low];
+        }
+        a[low] = tmp;
+        return low;
     }
 
     public static void main(String[] args){
@@ -85,6 +93,6 @@ public class Quick extends Sort {
         Quick.sort2(a, 0, a.length-1);
         Quick.printList(a);
         // -1, 0, 1, 1, 1, 2, 3, 4, 6, 8, 9, 10
-        System.out.println(findKth(a, 12, 0, a.length-1));
+        System.out.println(findKth(a, 0, a.length-1, 12));
     }
 }

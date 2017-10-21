@@ -75,4 +75,17 @@ public class Reverse {
         }
         return p;
     }
+
+    public Node practice(Node h) {
+        if(h == null || h.next == null) return h;
+        Node p = h, q = h.next, r;
+        h.next = null;
+        while(q != null) {
+            r = q.next;
+            q.next = p;
+            p = q;
+            q = r;
+        }
+        return p;
+    }
 }

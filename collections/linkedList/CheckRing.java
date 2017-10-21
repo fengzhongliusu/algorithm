@@ -46,7 +46,7 @@ public class CheckRing {
     /**
      * 快慢指针法, 指针相遇, 令一个指针重新指向头结点，两个指针同时移动，步长为1，最后两个指针定相遇于环入口.
      * A+B+kN = 2A+2B
-     * kN=A+B, (A = kN - B),
+     * kN=A+B, (A = kN - B = pN + (N - B)),
      * A: 头结点到环的入口距离，B: 相遇节点与入口的距离；
      */
     public static Node findEntr(Node head){
