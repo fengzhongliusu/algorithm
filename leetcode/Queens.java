@@ -45,7 +45,26 @@ public class Queens {
         }
     }
 
-    public static void getQ(Integer[] position, int cur){
+    /**
+     * 统计N-皇后，可能解法个数
+     * 三个辅助数组，分别判断是否是同一列，以及同一个对角线或反对角线.
+     * **/
+
+    int count = 0;
+    public int totalNQueens(int n) {
+        getQ(new boolean[n], new boolean[2*n], new boolean[2*n], 0, n);
+        return count;
+    }
+    public void getQ(boolean[] col, boolean[] diag, boolean[] antiDiag, int cur, int n){
+        if(cur >= n) { ++count; return; }
+        for(int c=0; c<n; c++) {
+            int id1 = cur-c+n;
+            int id2 = cur+c;
+            if(col[c] || diag[id1] || antiDiag[id2]) continue;
+            col[c] = true; diag[id1] = true; antiDiag[id2] = true;
+            getQ(col, diag, antiDiag, cur+1, n);
+            col[c] = false; diag[id1] = false; antiDiag[id2] = false;
+        }
     }
 
 }
