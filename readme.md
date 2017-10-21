@@ -43,6 +43,7 @@
 #### 搜索
 - [两个有序数组找中位数](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC4.java)
 - [BFS-字符串最短编辑路径](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC127.java)
+- [前缀树: 单词的插入查找](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC208.java)
 
 #### 回溯
 - [不包含重复元素数组的全排列](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Permutation.java)
