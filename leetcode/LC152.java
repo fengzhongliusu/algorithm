@@ -1,33 +1,29 @@
 package leetcode;
 
 /**
- * Created by cshuo on 2017/8/4
- *
- Find the contiguous subarray within an array (containing at least one number) which has the largest product.
- For example, given the array [2,3,-2,4],
- the contiguous subarray [2,3] has the largest product = 6.
- *
+ * Created by cshuo on 2021/8/28
  */
 public class LC152 {
     public static void main(String[] args) {
-        int[] nums = new int[]{-2, -1, -5, 2,3};
-        System.out.println(maxProduct(nums));
+        System.out.println(maxProduct(new int[] {2,3,-2,4}));
     }
-
-    /**
-     * e是当前元素，max和min是以e结尾的最大和最小乘积.
-     * rs记录推进过程中的最大值.
-     * 可扩展到最小字数组乘积.
-     */
     public static int maxProduct(int[] nums) {
-        if(nums == null || nums.length < 1) return 0;
-        int max = 1, min = 1, rs = Integer.MIN_VALUE;
-        for(int e: nums) {
-            int tmp = max;
-            max = Math.max(Math.max(max*e, min*e), e);
-            min = Math.min(Math.min(tmp*e, min*e), e);
-            if(max > rs) rs = max;
+        int max = Integer.MIN_VALUE;
+        int preMin = 1, preMax = 1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                preMin = 0;
+                preMax = 0;
+            } else if (nums[i] > 0) {
+                preMin = Math.min(nums[i] * preMin, nums[i]);
+                preMax = Math.max(nums[i] * preMax, nums[i]);
+            } else {
+                int tmp = preMin;
+                preMin = Math.min(nums[i] * preMax, nums[i]);
+                preMax = Math.max(nums[i] * tmp, nums[i]);
+            }
+            max = Math.max(max, preMax);
         }
-        return rs;
+        return max;
     }
 }

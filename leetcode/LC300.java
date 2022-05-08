@@ -1,41 +1,43 @@
 package leetcode;
 
+import javafx.collections.transformation.SortedList;
+
 import java.util.Arrays;
+import java.util.SortedSet;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 /**
- * Created by cshuo on 2017/8/13
- * 300. Longest Increasing Subsequence
- * Given an unsorted array of integers, find the length of longest increasing subsequence.
-
- For example,
- Given [10, 9, 2, 5, 3, 7, 101, 18],
- The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be
- more than one LIS combination, it is only necessary for you to return the length.
+ * Created by cshuo on 2021/8/12
  */
 public class LC300 {
-    /**
-     * dp[i]: 以nums[i]结尾的最长上升子序列的长度.
-     */
     public static void main(String[] args) {
-        int[] a = new int[] {1,2,3,5};
-        System.out.println(Arrays.binarySearch(a, 0, 4, 0));
+        int[] a = new int[] {2,1,3};
+        System.out.println(findPositionToReplace(a, 0, 2, 5));
+        System.out.println(lengthOfLIS(a));
+    }
+    public static int findPositionToReplace(int[] a, int low, int high, int x) {
+        int mid;
+        while (low <= high) {
+            mid = low + (high - low) / 2;
+            if (a[mid] == x)
+                return mid;
+            else if (a[mid] > x)
+                high = mid - 1;
+            else
+                low = mid + 1;
+        }
+        return low;
     }
 
-    public int lengthOfLIS(int[] nums) {
-        if(nums == null || nums.length < 1) return 0;
-        int[] dp = new int[nums.length];
-        dp[0] = 1;
-        for(int i=1; i<nums.length; i++) {
-            int maxLen = -1;
-            for(int j=0; j<i; j++) {
-                // 取i之前dp[j]的最大值.
-                if(nums[i] > nums[j] && dp[j]+1 > maxLen) maxLen = dp[j] + 1;
-            }
-            dp[i] = maxLen==-1 ? 1:maxLen;
+    public static int lengthOfLIS(int[] nums) {
+        TreeSet<Integer> set = new TreeSet<>();
+        int max = 0;
+        for (int i: nums) {
+            set.add(i);
+            int numOfSmallerEle = set.headSet(i, true).size();
+            if (numOfSmallerEle > max) max = numOfSmallerEle;
         }
-        // 最后返回dp中的最大值.
-        int maxLen = -1;
-        for(int e: dp) if(e > maxLen) maxLen = e;
-        return maxLen;
+        return max;
     }
 }

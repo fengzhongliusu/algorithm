@@ -7,7 +7,6 @@ public class Bsearch {
 
     public static void main(String[] args) {
         int []arrs = {1,2,3,4,4,6,9,10};
-        System.out.println(findLastLessOrEqual(arrs, 5));
         System.out.println(findK(arrs, 3));
         System.out.println(findFirstK(arrs, 4));
         System.out.println(findLastK(arrs, 4));
