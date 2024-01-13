@@ -1,3 +1,5 @@
+// use segment tree to arrange range sum of an array.
+
 class NumArray307 {
     static Node root;
     static class Node {
