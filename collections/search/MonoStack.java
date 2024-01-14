@@ -75,4 +75,28 @@ public class MonoStack {
 
         return rs;
     }
+
+    // Given a circular integer array nums (i.e., the next element of nums[nums.length - 1] is nums[0]), 
+    // return the next greater number for every element in nums.
+    // The next greater number of a number x is the first greater number to its traversing-order next in the array,
+    // which means you could search circularly to find its next greater number. If it doesn't exist, return -1 for this number.
+    // 
+    // Solution: 扩充遍历范围 0, 1, 2 ... N-1, N, N + 1, ..., 2N - 1. 以实现循环查找效果.
+    public int[] nextGreaterElements(int[] nums) {
+        int[] res = new int[nums.length];
+        Arrays.fill(res, -1);
+        Stack<Integer> st = new Stack<>();
+        int i = 0;
+        while (i < nums.length * 2 - 1) {
+            int curVal = i < nums.length ? nums[i] : nums[i % nums.length];
+            while (!st.isEmpty() && nums[st.peek() % nums.length] < curVal) {
+                int idx = st.pop();
+                if (idx < nums.length) {
+                    res[idx] = curVal;
+                }
+            }
+            st.push(i++);
+        }
+        return res;
+    }
 }
