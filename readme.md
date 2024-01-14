@@ -30,6 +30,9 @@
   * [二叉查找树删除节点](https://github.com/fengzhongliusu/algorithm/blob/master/collections/tree/DeleletNode.java)
   * [根据前序和中序构建二叉树](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LC105.java)
   * [二叉搜索树转成双向链表](https://github.com/fengzhongliusu/algorithm/blob/master/sword/BST2LinkedList.java)
+  * [Segment Tree: range sum query](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/NumArray307.java)
+  * [Interval Tree: My Calendar](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/MyCalendar729.java)
+
 - 查找
   * [二分搜索及扩展](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/BinSearch.java)
   * [单调栈查找](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/MonoStack.java)
