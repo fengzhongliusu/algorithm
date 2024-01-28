@@ -37,6 +37,7 @@
   * [二分搜索及扩展](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/BinSearch.java)
   * [单调栈查找](https://github.com/fengzhongliusu/algorithm/blob/master/collections/search/MonoStack.java)
   * [LRU缓存](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/LRUCache.java)
+  * [跳表](https://github.com/fengzhongliusu/algorithm/blob/master/leetcode/Skiplist.java)
 
 ### leetcode 
 
